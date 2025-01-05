@@ -1,10 +1,156 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Test Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kristýna Navitas Onderková| Personal Website</title>
+    <meta name="author" content="Kristýna Onderková" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- FontAwesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/74dfc6cf47.css">
+
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #D3D3D3;
+        }
+        .header-panel {
+            background-color: #006400;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header-content {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 1100px;
+            margin-left: 15%;
+        }
+        .header-panel .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+        .header-panel .info h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        .header-panel .info p {
+            margin: 5px 0;
+            font-size: 1em;
+        }
+        .header-panel .icon {
+            margin-top: 10px;
+        }
+        .header-panel .icon a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .header-panel img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .menu {
+            background-color: #006400;
+            padding: 15px;
+            min-height: auto;
+            width: auto;
+            color: white;
+            margin-top: 1%;
+            left: 18%;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .menu ul li {
+            margin: 10px 0;
+        }
+        .menu ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .menu ul li a:hover {
+            text-decoration: underline;
+        }
+       .content {
+            background-color: #D3D3D3;
+            padding: 15px;
+            min-height: auto;
+            width: auto;
+            color: black;
+            margin-top: 1%;
+            left: 20%;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+    
 </head>
 <body>
-    <h1>Hello, I'm <Týna></h1>
-    <p>Here will be my personal webpage.</p>
+    <div class="header-panel">
+        <div class="header-content">
+            <div class="info">
+                <h1>Kristýna Navitas Onderková</h1>
+                <p>PhD Student</p>
+                <div class="icon">
+                    <a href="https://linkedin.com/in/kristyna-onderkova-87b01459" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://x.com/A_Navitas" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://github.com/Kristyna-Navitas" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <img src="profilovka.jpeg" alt="Kristýna Navitas Onderková">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#cv">CV</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3 content">
+                <section id="research">
+                    <h2>In progres...</h2}>
+                    <h2>Research</h2>
+                    <p>Details about your research interests and publications.</p>
+                </section>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <p>Highlights of your key projects.</p>
+                </section>
+                <section id="cv">
+                    <h2>CV</h2>
+                    <a href="cv.pdf" target="_blank">Download CV</a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Kristýna Navitas. All rights reserved.
 </body>
 </html>
